@@ -29,7 +29,14 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
+    'plugin:tailwindcss/recommended',
     'plugin:prettier/recommended' // Make sure this is always the last element in the array.
+  ],
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx', '*.js'],
+      parser: '@typescript-eslint/parser'
+    }
   ],
   plugins: ['simple-import-sort', 'prettier'],
   rules: {
