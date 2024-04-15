@@ -13,8 +13,8 @@
 ### Clone to local
 
 ```bash
-pnpx degit jvidalv/vital my-vital-app
-cd my-vital-app
+pnpx degit phiphou/react-ts-vite-eslint-tailwind-boilerplate YOUR_APP
+cd YOUR_APP
 pnpm i
 ```
 
