@@ -13,7 +13,7 @@
 ### Clone to local
 
 ```bash
-pnpx degit phiphou/react-ts-vite-eslint-tailwind-boilerplate YOUR_APP
+pnpm dlx degit phiphou/react-ts-vite-eslint-tailwind-boilerplate YOUR_APP
 cd YOUR_APP
 pnpm i
 ```
