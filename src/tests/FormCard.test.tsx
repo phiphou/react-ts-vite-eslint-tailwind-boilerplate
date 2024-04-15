@@ -1,5 +1,5 @@
-import { describe, expect, test, vi } from 'vitest'
 import { fireEvent, render } from '@testing-library/react'
+import { describe, expect, test, vi } from 'vitest'
 
 import FormCard from '@/components/FormCard'
 

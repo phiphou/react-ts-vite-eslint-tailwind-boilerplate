@@ -1,11 +1,16 @@
-import react from 'eslint-plugin-react'
+import js from '@eslint/js'
 import typescriptEslint from '@typescript-eslint/eslint-plugin'
 import typescriptParser from '@typescript-eslint/parser'
-import globals from 'globals'
+import jsxA11y from 'eslint-plugin-jsx-a11y'
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
+import react from 'eslint-plugin-react'
 import reactRecommended from 'eslint-plugin-react/configs/recommended.js'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
+import globals from 'globals'
 
 export default [
+  js.configs.recommended,
+  eslintPluginPrettierRecommended,
   {
     ignores: [
       'dist/**/*',
@@ -46,16 +51,11 @@ export default [
     plugins: {
       '@typescript-eslint': typescriptEslint,
       react,
-      'simple-import-sort': simpleImportSort
+      'simple-import-sort': simpleImportSort,
+      'jsx-a11y': {
+        rules: jsxA11y.rules
+      }
     },
-    extends: [
-      'eslint:recommended',
-      'plugin:@typescript-eslint/recommended',
-      'plugin:react/recommended',
-      'plugin:jsx-a11y/recommended',
-      'plugin:tailwindcss/recommended',
-      'plugin:prettier/recommended' // Make sure this is always the last element in the array.
-    ],
     rules: {
       'prettier/prettier': [
         'error',
